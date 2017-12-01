@@ -1,0 +1,244 @@
+html{
+  background-color: #f7efe8;
+}
+body{
+  box-sizing: border-box;
+  height: 100%;
+  display: table;
+  width: intrinsic;         /* Safari/WebKit uses a non-standard name */
+  width: -moz-max-content;    /* Firefox/Gecko */
+  width: fit-content; /* Chrome */
+  margin: 0 auto;
+  background-color: white;
+  font-family: helvetica, arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #776e65;
+  padding: 40px;
+}
+.border-radius{
+  border-radius:3px;
+}
+.size{
+  width: 80px;
+  height: 80px;
+}
+.number{
+    @extend .size;
+    @extend .border-radius;
+    display: block;
+    color: #635d57;
+    font-size: 2.3em;
+    position:relative;
+}
+.before{
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+h1{
+  font-size: 60px;
+}
+h2{
+  font-size: 18px;
+}
+ul{
+  display: table;
+  width: intrinsic;         /* Safari/WebKit uses a non-standard name */
+  width: -moz-max-content;    /* Firefox/Gecko */
+  width: fit-content; /* Chrome */
+  margin:20px auto;
+  padding: 6px;
+  background-color: #bbada0;
+  position: relative;
+  overflow: auto;
+  @extend .border-radius;
+}
+li{
+  @extend .border-radius;
+  @extend .size;
+  float: left;
+  margin: 5px;
+  background-color:#cdc1b4;
+  position:relative;
+}
+p{
+  text-align: center;
+  font-weight: 300;
+}
+ul li:nth-child(4n+5){
+  clear: both;
+}
+.selected{
+  border: 1px solid black;
+}
+.two{
+    background-color: #eee4da;
+    @extend .number;
+}
+.two:before {
+    content:'2';
+    @extend .before;
+}
+.four{
+  background-color: #ede0c8;
+  @extend .number;
+}
+.four:before{
+    content:'4';
+    @extend .before;
+}
+.eight{
+  background-color: #eee4da;
+  @extend .number;
+}
+.eight:before{
+    content:'8';
+    @extend .before;
+}
+.sixteen{
+    color:white;
+    background-color: #f59563;
+    @extend .number;
+}
+.sixteen:before{
+    content:'16';
+    @extend .before;
+}
+.thirtyTwo{
+    color:white;
+    background-color: #e76b4d;
+    @extend .number;
+}
+.thirtyTwo:before{
+    content:'32';
+    @extend .before;
+}
+.sixtyFour{
+    color:white;
+    background-color: #da4b2a;
+    @extend .number;
+}
+.sixtyFour:before{
+    content:'64';
+    @extend .before;
+}
+.hundredTwentyEight{
+    color:white;
+    background-color: #edcf72;
+    font-size: 2.1em;
+    @extend .number;
+}
+.hundredTwentyEight:before{
+    content:'128';
+    @extend .before;
+}
+.twoHundredFiftySix{
+    color:white;
+    background-color: #cca527;
+    font-size: 2.1em;
+    @extend .number;
+}
+.twoHundredFiftySix:before{
+    content:'256';
+    @extend .before;
+}
+.FiveHundredAndTwelve{
+    color:white;
+    background-color: blue;
+    font-size: 2.1em;
+    @extend .number;
+}
+.FiveHundredAndTwelve:before{
+    content:'512';
+    @extend .before;
+}
+.oneThousandTwentyFour{
+    color:white;
+    background-color: blue;
+    font-size: 1.8em;
+    @extend .number;
+}
+.oneThousandTwentyFour:before{
+    content:'1024';
+    @extend .before;
+}
+.yay{
+    color:white;
+    background-color: blue;
+    font-size: 1.8em;
+    @extend .number;
+}
+.yay:before{
+    content:'2048';
+    @extend .before;
+}
+span{
+  position:absolute;
+  top:0;
+  left:0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(247,239,232,0.6);
+  padding: 220px 0;
+  box-sizing: border-box;
+  display: none;
+}
+.visible{
+  display: block;
+}
+span h1{
+  margin-bottom: 20px;
+}
+a{
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  background-color: #f59563;
+}
+.lnr {
+  display: inline-block;
+  fill: white;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.05em;
+}
+@media screen and (max-width: 700px) {
+    body{
+        padding: 30px;
+        margin: 20px;
+    }
+    .size{
+        width: 60px;
+        height: 60px;
+    }
+    .number{
+      font-size: 1.3em;
+    }
+}
+@media screen and (max-width: 410px) {
+    .size{
+        width: 50px;
+        height: 50px;
+    }
+    .number{
+      font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 360px) {
+    .size{
+        width: 40px;
+        height: 40px;
+    }
+    .number{
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,267 @@
+html {
+  background-color: #f7efe8;
+}
+
+body {
+  box-sizing: border-box;
+  height: 100%;
+  display: table;
+  width: intrinsic;
+  /* Safari/WebKit uses a non-standard name */
+  width: -moz-max-content;
+  /* Firefox/Gecko */
+  width: fit-content;
+  /* Chrome */
+  margin: 0 auto;
+  background-color: white;
+  font-family: helvetica, arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #776e65;
+  padding: 40px;
+}
+
+.border-radius, .number, .two, .four, .eight, .sixteen, .thirtyTwo, .sixtyFour, .hundredTwentyEight, .twoHundredFiftySix, .FiveHundredAndTwelve, .oneThousandTwentyFour, .yay, ul, li {
+  border-radius: 3px;
+}
+
+.size, .number, .two, .four, .eight, .sixteen, .thirtyTwo, .sixtyFour, .hundredTwentyEight, .twoHundredFiftySix, .FiveHundredAndTwelve, .oneThousandTwentyFour, .yay, li {
+  width: 80px;
+  height: 80px;
+}
+
+.number, .two, .four, .eight, .sixteen, .thirtyTwo, .sixtyFour, .hundredTwentyEight, .twoHundredFiftySix, .FiveHundredAndTwelve, .oneThousandTwentyFour, .yay {
+  display: block;
+  color: #635d57;
+  font-size: 2.3em;
+  position: relative;
+}
+
+.before, .two:before, .four:before, .eight:before, .sixteen:before, .thirtyTwo:before, .sixtyFour:before, .hundredTwentyEight:before, .twoHundredFiftySix:before, .FiveHundredAndTwelve:before, .oneThousandTwentyFour:before, .yay:before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+ul {
+  display: table;
+  width: intrinsic;
+  /* Safari/WebKit uses a non-standard name */
+  width: -moz-max-content;
+  /* Firefox/Gecko */
+  width: fit-content;
+  /* Chrome */
+  margin: 20px auto;
+  padding: 6px;
+  background-color: #bbada0;
+  position: relative;
+  overflow: auto;
+}
+
+li {
+  float: left;
+  margin: 5px;
+  background-color: #cdc1b4;
+  position: relative;
+}
+
+p {
+  text-align: center;
+  font-weight: 300;
+}
+
+ul li:nth-child(4n+5) {
+  clear: both;
+}
+
+.selected {
+  border: 1px solid black;
+}
+
+.two {
+  background-color: #eee4da;
+}
+
+.two:before {
+  content: '2';
+}
+
+.four {
+  background-color: #ede0c8;
+}
+
+.four:before {
+  content: '4';
+}
+
+.eight {
+  background-color: #eee4da;
+}
+
+.eight:before {
+  content: '8';
+}
+
+.sixteen {
+  color: white;
+  background-color: #f59563;
+}
+
+.sixteen:before {
+  content: '16';
+}
+
+.thirtyTwo {
+  color: white;
+  background-color: #e76b4d;
+}
+
+.thirtyTwo:before {
+  content: '32';
+}
+
+.sixtyFour {
+  color: white;
+  background-color: #da4b2a;
+}
+
+.sixtyFour:before {
+  content: '64';
+}
+
+.hundredTwentyEight {
+  color: white;
+  background-color: #edcf72;
+  font-size: 2.1em;
+}
+
+.hundredTwentyEight:before {
+  content: '128';
+}
+
+.twoHundredFiftySix {
+  color: white;
+  background-color: #cca527;
+  font-size: 2.1em;
+}
+
+.twoHundredFiftySix:before {
+  content: '256';
+}
+
+.FiveHundredAndTwelve {
+  color: white;
+  background-color: blue;
+  font-size: 2.1em;
+}
+
+.FiveHundredAndTwelve:before {
+  content: '512';
+}
+
+.oneThousandTwentyFour {
+  color: white;
+  background-color: blue;
+  font-size: 1.8em;
+}
+
+.oneThousandTwentyFour:before {
+  content: '1024';
+}
+
+.yay {
+  color: white;
+  background-color: blue;
+  font-size: 1.8em;
+}
+
+.yay:before {
+  content: '2048';
+}
+
+span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(247, 239, 232, 0.6);
+  padding: 220px 0;
+  box-sizing: border-box;
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+span h1 {
+  margin-bottom: 20px;
+}
+
+a {
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  background-color: #f59563;
+}
+
+.lnr {
+  display: inline-block;
+  fill: white;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.05em;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    padding: 30px;
+    margin: 20px;
+  }
+
+  .size, .number, .two, .four, .eight, .sixteen, .thirtyTwo, .sixtyFour, .hundredTwentyEight, .twoHundredFiftySix, .FiveHundredAndTwelve, .oneThousandTwentyFour, .yay, li {
+    width: 60px;
+    height: 60px;
+  }
+
+  .number, .two, .four, .eight, .sixteen, .thirtyTwo, .sixtyFour, .hundredTwentyEight, .twoHundredFiftySix, .FiveHundredAndTwelve, .oneThousandTwentyFour, .yay {
+    font-size: 1.3em;
+  }
+}
+@media screen and (max-width: 410px) {
+  .size, .number, .two, .four, .eight, .sixteen, .thirtyTwo, .sixtyFour, .hundredTwentyEight, .twoHundredFiftySix, .FiveHundredAndTwelve, .oneThousandTwentyFour, .yay, li {
+    width: 50px;
+    height: 50px;
+  }
+
+  .number, .two, .four, .eight, .sixteen, .thirtyTwo, .sixtyFour, .hundredTwentyEight, .twoHundredFiftySix, .FiveHundredAndTwelve, .oneThousandTwentyFour, .yay {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 360px) {
+  .size, .number, .two, .four, .eight, .sixteen, .thirtyTwo, .sixtyFour, .hundredTwentyEight, .twoHundredFiftySix, .FiveHundredAndTwelve, .oneThousandTwentyFour, .yay, li {
+    width: 40px;
+    height: 40px;
+  }
+
+  .number, .two, .four, .eight, .sixteen, .thirtyTwo, .sixtyFour, .hundredTwentyEight, .twoHundredFiftySix, .FiveHundredAndTwelve, .oneThousandTwentyFour, .yay {
+    font-size: 1em;
+  }
+}
